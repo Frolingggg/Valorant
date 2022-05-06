@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+        .flex-h{
+display: flex;
+justify-content: space-around;
+align-items:center ;
+background-color:red;
+        }
+        body{
+margin: 0;
+background-color: brown;
+        }
+        .contact{
+            background-color:white;
+            border-radius: 30px;
+padding: 0 10px;
+        }
+        .contact a{
+text-decoration: none;
+color: black;
+        }
+        .flex-h img{
+width: 50px;
+margin: 0 10px;
+
+        }
+        footer{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }   
+        .txt{
+            font-size: 25px;
+            font-style:oblique;
+            font-weight: bold;
+        }
+         </style>
+</head>
+<body ng-app>
+<header class="flex-h"> 
+<img width="64px" src="https://i.pinimg.com/474x/c4/5a/2a/c45a2aaffb8700d6fcbd40f8121b6117.jpg" alt="">
+<h1>Best of Budget Valo Skins</h1>
+<div class="contact"><a href="https://twitter.com/GWoosty"><H2>Contact us</H2></a></div>
+
+<div class="contact"><a href="info.html"><H2>info</H2></a></div>
+</header>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script> 
+
+<form action="">
+<p>Choose The Gun:</p>
+ <input color="white"type="radio" ng-model="info" value="Paris"> Classic
+ <input color="white"type="radio" ng-model="info" value="London"> Frenzy
+ <input color="white"type="radio" ng-model="info" value="Dnepr"> Ghost
+ <input color="white"type="radio" ng-model="info" value="Sheriff"> Sheriff
+ <input color="white"type="radio" ng-model="info" value="Pekin"> Stinger
+ <input color="white" type="radio" ng-model="info" value="Prague"> Phantom
+ <input color="white"type="radio" ng-model="info" value="Vandal">Vandal 
+ <input color="white" type="radio" ng-model="info" value="Operator">Operator
+</form>
+
+<div ng-switch= "info">
+<div ng-switch-when="London">
+<h1>Frenzy </h1>
+<p  class="txt">
+Frenzy BlastX(2175vp) and Frenzy Glitchpop(2175vp):
+</p>
+<img width="600" height="500" src="BlastX-Frenzy-Level-7.jpg" alt="">
+<img width="600" height="500" src="christoph-schadl-rabcat-game-art-glitchpop-image03-1000x600.jpg" alt="">
+</div>
+<div ng-switch-when="Dnepr">
+<h1>Ghost</h1>
+<p class="txt">Ghost Ice-land an Ghost Ego(1775vp):</p>
+<img width="600" src="Valorant-Depths-Collection-Ghost-HD.jpg" alt="">
+<img width="600" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSGmK-64SmOv2qJC6qx2-mlD7oY_W7ih_klg&usqp=CAU" alt="">
+</div>
+<div ng-switch= "info">
+    <div ng-switch-when="Paris">
+    <h1>Classic </h1>
+    <p  class="txt">
+    Classic Forsaken(1775vp) and Classic Glitchpop(2475vp):
+    </p>
+    <img width="600" src="Valorant-Foresaken-Collection-Classic-HD.jpg" alt="">
+    <img width="600"src="1462661-glitchpop-classic-article_m-1.jpg" alt="">
+    </div>
+    <div ng-switch-when="Prague">
+        <h1>Phantom</h1>
+        <p class="txt"> Oni Phantom(1775vp) and Phantom Glitchpop(2175vp):
+        </p>
+        <img width="1000" height="600"src="https://cdn-images.win.gg/resize/w/620/format/webp/type/progressive/fit/cover/path/wp/uploads/2021/08/new-oni-valorant-skins-improve-the-phantom-sakura-bundle-teased.png" alt="">
+        <img width="600" height="500"src="Adobe_Post_20210812_2127400.6016218430814205.jpg" alt="">
+  </div>
+        <div ng-switch-when="Pekin">
+            <h1>Stinger</h1>
+            <p class="txt">Stinger Aristocrat(1275vp) and Stinger Sovereign (1775vp):<p>
+           <img src="Stinger-valorant.jpg" alt="">
+           <img src="Valorant-Sovereign-Stinger-HD.jpg" alt="">
+        </div>
+
+</div>
+<div ng-switch-when="Sheriff">
+    <h1>Sheriff</h1>
+    <p class="txt"> Sheriff Magepunk(1775vp) and Sheriff Aristocrat(1275vp):   </p>
+    <img width="600" height="500"src="aristocrat-sheriff.jpg" alt="">
+    <img width="600" height="500"src="Magepunk-Sheriff-variant-2.jpg" alt="">
+</div>
+<div ng-switch-when="Vandal">
+    <h1>Vandal</h1>
+    <p class="txt"> Vandal Elderflame(2475vp) and Vandal Forsaken(1775vp):   </p>
+    <img width="600" height="500" src="Valorant-Elderflame-Collection-Vandal-HD.jpg">
+    <img width="600" height="500"src="https://i.ytimg.com/vi/aksA-TrcOwo/mqdefault.jpg" >
+</div>
+<div ng-switch-when="Operator">
+    <h1>Operator</h1>
+    <p class="txt"> Operator Forsaken(1775vp) and Operator Reaver(1775vp):   </p>
+    <img width="600" height="500" src="619aa11632209f07fedce568_kkNvK3U_ZXI9SJl7o2L3CyffrkSxSLeetmwqStbWFUdNvjrPSiGGFVleWB-hZPMtL3_RIqwtYuCCfTS5kBBpXVxYZLKRw7ahUhxbLz8PYdj7wAXPHnMbram275vzh--jUwLgVkTs.jpeg" alt="">
+    <img width="600" height="500"src="reaver-operator-white-ingame_orig.jpg" alt="">
+</div>
+
+<footer class="flex-h">
+    <h1>Best of Budget Valo Skins</h1>
+<div>
+    <a href="https://www.instagram.com/woostyfifa/"><img src="instagram.png"> </a>
+<a href="https://twitter.com/GWoosty"><img src="3256013.png"></a>
+
+</div>
+<h2>&copy; Wxsty.2022</h2>
+
+
+</footer>
+<script src="app21-2-2-1.js"></script>
+</body>
+</html>

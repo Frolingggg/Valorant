@@ -1,0 +1,65 @@
+body{
+    margin: 10px auto;
+    max-width: 800px;
+}
+ul {
+    padding: 0;
+    margin-top: 20px;
+    text-align: center;
+    font: 1.1rem;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 5px 15px;
+    margin: 2px 0;
+    background: orange;
+    border-radius: 5px;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+h1{
+    margin: 10px;
+    text-align: center;
+}
+h2{
+    margin: 10px;
+}
+p{
+    margin: 10px;
+}
+.books-container{
+    position: relative;
+    margin: 20px;
+}
+.books-view{
+    padding: 10px;
+}
+.books-view.ng-animate{
+    transition: all ease 0.5s;
+    position: absolute;
+}
+.books-view.ng-enter{
+    top: 200px;
+    opacity: 0;
+}
+.books-view.ng-leave,
+.books-view.ng-enter.ng-enter-active{
+    top: 0;
+    opacity: 1;
+}
+.books-view.ng-leave.ng-leave-active{
+    top: -200px;
+    opacity: 0;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+body{
+background-image:url( https://csgoluxe.ru//wp-content/uploads/2019/03/kuda-sohranjajutsja-skrinshoty-cs-go.jpg);
+
+
+}
